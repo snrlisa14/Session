@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrasi Admin Perpustakaan</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #b3f0df;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            margin: 0 auto;
+        }
+
+        input {
+            margin: 5px 0;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #108243;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color:  #77f19a;
+        }
+
+        label {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .container {
+            background-color: rgb(33, 213, 114);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgb(8, 169, 126);
+        }
+
+        p {
+            text-align: center;
+        }
+
+        a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Register Perpustakaan</h2>
+        <form action="/auth/register" method="POST">
+            <label for="username">Nama Admin</label>
+            <input type="text" id="username" name="username" placeholder="Masukkan nama admin" required><br>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Masukkan email admin" required><br>
+
+            <label for="password">Kata Sandi</label>
+            <input type="password" id="password" name="password" placeholder="Masukkan kata sandi" required><br>
+
+            <button type="submit">Login</button>
+        </form>
+        <p>Sudah memiliki akun? <a href="/auth/login">Login disini!</a></p>
+    </div>
+</body>
+</body>
+</html>
