@@ -1,0 +1,94 @@
+// Create A User
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "Kayla",
+    "email": "admin@gmail.com",
+    "password": "1234",
+    "confPassword": "1234",
+    "role": "admin"
+}
+
+###
+//get All Users
+GET http://localhost:5000/users
+
+###
+//Get Single User
+GET http://localhost:5000/users/40949d79-cc95-4597-9969-50e77ac7d43b
+
+###
+//Update User
+PATCH  http://localhost:5000/users/40949d79-cc95-4597-9969-50e77ac7d43b
+Content-Type: application/json
+
+{
+    "name": "John Updated",
+    "email": "John@gmail.com",
+    "password": "",
+    "confPassword": "",
+    "role": "user"
+}
+
+###
+//Delete User
+DELETE http://localhost:5000/users/40949d79-cc95-4597-9969-50e77ac7d43b
+
+###
+//Login User
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "admin@gmail.com",
+    "password": "123456"
+
+}
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "john@gmail.com",
+    "password": "123456"
+
+}
+
+### 
+GET http://localhost:5000/me
+
+###
+DELETE http://localhost:5000/logout
+
+###
+// Get All Products
+GET http://localhost:5000/products
+
+###
+// Get Single Product
+GET http://localhost:5000/product/0976ac0d-d3e0-4702-b99a-2b733021567e
+
+###
+///POST Data Product
+POST http://localhost:5000/product
+Content-Type: application/json
+
+{
+    "name": "Baju Batik",
+    "price": 30000  
+}
+
+###
+///POST Data Product
+PATCH  http://localhost:5000/product/bfecc6c3-62de-45f3-b7b0-9462f04b3a78
+Content-Type: application/json
+
+{
+    "name": "Product Update",
+    "price": 974
+}
+
+###
+DELETE http://localhost:5000/product/0976ac0d-d3e0-4702-b99a-2b733021567e

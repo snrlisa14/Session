@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beranda Perpustakaan</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            background-color: #0fa94c;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        header h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 18px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .card {
+            background-color: rgb(181, 237, 211);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            width: 48%;
+            margin-bottom: 20px;
+            padding: 20px;
+            text-align: justify;
+        }
+
+        .card h3 {
+            font-size: 24px;
+            color: #343a40;
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            text-align: justify;
+            font-size: 16px;
+            color: #555555;
+            line-height: 1.6;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            text-align: center;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        .button:hover {
+            background-color: #218838;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #0fa94c;
+            color: white;
+        }
+
+        footer p {
+            font-size: 14px;
+        }
+        .back-button {
+        display: inline-block;
+        padding: 12px 25px;
+        background-color: #5df98c; /* Warna tombol */
+        color: rgb(0, 0, 0);
+        text-align: center;
+        border-radius: 30px; /* Membuat tombol menjadi bulat */
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: bold;
+        transition: background-color 0.3s ease, transform 0.2s ease; /* Animasi */
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+    }
+
+    .back-button:hover {
+        background-color: #36a649; /* Warna tombol saat di-hover */
+        transform: translateY(-3px); /* Efek bergerak ke atas saat di-hover */
+        box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2); /* Bayangan saat hover */
+    }
+
+    .back-button:active {
+        transform: translateY(0px); /* Menormalkan posisi saat diklik */
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Mengurangi bayangan saat klik */
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Selamat Datang di Perpustakaan Digital</h1>
+        <p>Menyediakan akses mudah ke ribuan buku dan referensi secara online</p>
+    </header>
+
+    <div class="container">
+        <div class="content">
+            <!-- Card 1 -->
+            <div class="card">
+                <h3>Koleksi Buku Terlengkap</h3>
+                <p>Kami menyediakan berbagai buku dari beragam kategori, mulai dari fiksi, non-fiksi, sains, sejarah, teknologi, hingga referensi akademik. 
+                    Temukan buku favorit Anda dan perluas wawasan dengan koleksi kami.</p>
+            </div>
+            <!-- Card 2 -->
+            <div class="card">
+                <h3>Layanan Keanggotaan</h3>
+                <p>Jadilah anggota perpustakaan untuk mendapatkan akses penuh ke koleksi kami, peminjaman buku, dan berbagai manfaat lainnya. Keanggotaan terbuka untuk umum, baik pelajar, mahasiswa, maupun masyarakat umum.</p>
+            </div>
+            <!-- Card 3 -->
+            <div class="card">
+                <h3>Acara dan Workshop</h3>
+                <p>Kami secara rutin mengadakan acara seperti diskusi buku, seminar, dan workshop. 
+                    Ayo ikuti acara kami untuk menambah wawasan dan berbagi pengetahuan dengan komunitas lainnya.</p>
+            </div>
+            <!-- Card 4 -->
+            <div class="card">
+                <h3>Bantuan dan Dukungan</h3>
+                   <li><strong>Email:</strong> support@perpustakaan.com</li>
+                    <li><strong>Telepon:</strong> (021) 123-4567</li>
+                    <li><strong>Datang langsung ke: </strong>
+                                <br>Jl. Medan Merdeka Sel. No.11 · 0857-1714-7303
+                    </li>
+                </div>
+        </div>
+    </div>
+          <!-- Button Kembali -->
+          <a href="/auth/login" class="back-button">Kembali ke Halaman Awal</a>
+        </div>
+
+    <footer>
+        <p>&copy; 2024 Perpustakaan Digital. Semua hak dilindungi. | Email: support@perpustakaan.com | Telp: (021) 123-4567</p>
+    </footer>
+</body>
+</html>
